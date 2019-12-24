@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29C6D587-0EE4-4F3E-B68E-F45C48523028}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bank</RootNamespace>
+    <AssemblyName>Bank</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewClientFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewClientFrom.Designer.cs">
+      <DependentUpon>AddNewClientFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewCreditRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCreditRequestForm.Designer.cs">
+      <DependentUpon>AddNewCreditRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewDepartmentForm.Designer.cs">
+      <DependentUpon>AddNewDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewСontributionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewСontributionForm.Designer.cs">
+      <DependentUpon>AddNewСontributionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewWorkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewWorkerForm.Designer.cs">
+      <DependentUpon>AddNewWorkerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataSet.cs">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseTransactionForm.Designer.cs">
+      <DependentUpon>ChooseTransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientFullInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientFullInfoForm.Designer.cs">
+      <DependentUpon>ClientFullInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCreditsInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCreditsInfoForm.Designer.cs">
+      <DependentUpon>ClientCreditsInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditorForm.Designer.cs">
+      <DependentUpon>CreditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditPaymentForm.Designer.cs">
+      <DependentUpon>CreditPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorForm.Designer.cs">
+      <DependentUpon>DirectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FillUpAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillUpAccountForm.Designer.cs">
+      <DependentUpon>FillUpAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrom.Designer.cs">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveDepartmentForm.Designer.cs">
+      <DependentUpon>MoveDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferMoneyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferMoneyForm.Designer.cs">
+      <DependentUpon>TransferMoneyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveWorkerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveWorkerForm.Designer.cs">
+      <DependentUpon>MoveWorkerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperatorForm.Designer.cs">
+      <DependentUpon>OperatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewClientFrom.resx">
+      <DependentUpon>AddNewClientFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewCreditRequestForm.resx">
+      <DependentUpon>AddNewCreditRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewDepartmentForm.resx">
+      <DependentUpon>AddNewDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewСontributionForm.resx">
+      <DependentUpon>AddNewСontributionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewWorkerForm.resx">
+      <DependentUpon>AddNewWorkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseTransactionForm.resx">
+      <DependentUpon>ChooseTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientFullInfoForm.resx">
+      <DependentUpon>ClientFullInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCreditsInfoForm.resx">
+      <DependentUpon>ClientCreditsInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditorForm.resx">
+      <DependentUpon>CreditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditPaymentForm.resx">
+      <DependentUpon>CreditPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorForm.resx">
+      <DependentUpon>DirectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FillUpAccountForm.resx">
+      <DependentUpon>FillUpAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrom.resx">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveDepartmentForm.resx">
+      <DependentUpon>MoveDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferMoneyForm.resx">
+      <DependentUpon>TransferMoneyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveWorkerForm.resx">
+      <DependentUpon>MoveWorkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperatorForm.resx">
+      <DependentUpon>OperatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BankDataSet.xsc">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BankDataSet.xss">
+      <DependentUpon>BankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
